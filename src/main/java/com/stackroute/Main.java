@@ -11,8 +11,13 @@ public class Main
         //Task 2
         System.out.println("Using Annotations! - Constructor Injection");
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
-        Movie movie = annotationConfigApplicationContext.getBean("movie1",Movie.class);
+        Movie movie = annotationConfigApplicationContext.getBean("arjun reddy",Movie.class);
         movie.displayActor();
+
+        Movie movie2 = annotationConfigApplicationContext.getBean("taxiwaala",Movie.class);
+        movie2.displayActor();
+        System.out.println();
+        System.out.println("Comparing two movies "+ (movie==movie2));
 
     }
 }

@@ -6,15 +6,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfig {
 
-    @Bean(name = "movie1")
+    @Bean(name = {"arjun reddy", "taxiwaala"})
     public Movie getMovie()
     {
         return new Movie(setActor());
     }
-    @Bean(name = "actor1")
+    @Bean(name = "vd")
     public Actor setActor()
     {
         return new Actor("Vijay Devarakonda", "Male",29);
-
     }
+
 }
