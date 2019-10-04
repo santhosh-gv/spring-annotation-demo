@@ -8,8 +8,8 @@ public class Main
 {
     public static void main( String[] args )
     {
-        //Task 1
-        System.out.println("Using Annotations!");
+        //Task 2
+        System.out.println("Using Annotations! - Constructor Injection");
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
         Movie movie = annotationConfigApplicationContext.getBean("movie1",Movie.class);
         movie.displayActor();
